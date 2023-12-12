@@ -129,3 +129,22 @@ body {
     --tercearia: #8c52ff;
     --quartenaria: #A9A9A9;
 }
+
+.options-container {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+  }
+
+  .option {
+    padding: 12px;
+    text-decoration: none;
+    display: block;
+    color: #333;
+  }
+
+  .option:hover {
+    background-color: #ddd;
+  }

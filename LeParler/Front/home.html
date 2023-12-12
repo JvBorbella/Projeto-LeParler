@@ -5,16 +5,17 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>LeParler - Inicial</title>
     <link rel="stylesheet" href="./style.css" />
+    <link rel="stylesheet" href="./script.js">
     <nav class="navbar">
       <img src="../assets/logo.png" alt="" />
       <div class="buttons-nav">
         <button class="button-nav">Críticas</button>
-            <select class="button-nav" name="" id="">
-            <option class="option-nav" value="">Posts</option>
-            <option value="">Filmes</option>
-            <option value="">Séries</option>
-            <option value="">Jogos</option>
-            <option value="">Músicas</option>
+        <button class="button-nav" id="openOptions">Posts</button>
+        <div class="options-container" id="optionsContainer">
+            <a href="#" class="option">Opção 1</a>
+            <a href="#" class="option">Opção 2</a>
+            <a href="#" class="option">Opção 3</a>
+          </div>
         </select>
         </button>
 
@@ -22,7 +23,10 @@
     </nav>
   </head>
   <body>
+    <!-- div que agrupa os cards -->
     <div class="posts">
+
+        <!-- 1º card -->
       <div class="card">
         <center>
           <img
@@ -40,6 +44,9 @@
           </p>
         </center>
       </div>
+      <!-- Fim do 1º card -->
+
+      <!-- 2º card -->
       <div class="card">
         <center>
           <img
@@ -57,6 +64,9 @@
           </p>
         </center>
       </div>
+      <!-- Fim do 2º card -->
+
+      <!-- 3º card -->
       <div class="card">
         <center>
           <img
@@ -74,6 +84,9 @@
           </p>
         </center>
       </div>
+      <!-- Fim do 3º card -->
+
+      <!-- 4º card -->
       <div class="card">
         <center>
           <img
@@ -91,6 +104,9 @@
           </p>
         </center>
       </div>
+      <!-- Fim do 4º card -->
+
+      <!-- 5º card -->
       <div class="card">
         <center>
           <img
@@ -108,6 +124,9 @@
           </p>
         </center>
       </div>
+      <!-- Fim do 5º card -->
+
+      <!-- 6º card -->
       <div class="card">
         <center>
           <img
@@ -125,9 +144,15 @@
           </p>
         </center>
       </div>
+      <!-- Fim do 6º card -->
     </div>
+    <!-- Fim da div que agrupa os cards -->
+
     <footer>
+        <!-- Classe footer para agrupar e alinhar os elementos dentro dela -->
         <div class="footer">
+
+            <!-- Classe para agrupar uma categoria e suas opções -->
         <div class="sociais">
         <h3 class="title-footer">Sociais</h3>
         <div class="redes">
@@ -141,6 +166,8 @@
         </svg></a>
     </div>
     </div>
+
+    <!-- Classe para agrupar uma categoria e suas opções -->
     <div class="sociais">
     <h3>Filmes</h3>
     <div class="elementos-footer">
@@ -153,6 +180,8 @@
       <a class="a" href="#">Oscar</a>
     </div>
     </div>
+
+    <!-- Classe para agrupar uma categoria e suas opções -->
     <div class="sociais">
       <h3>Series</h3>
       <div class="elementos-footer">
@@ -162,6 +191,8 @@
           <a class="a" href="#">Notícias</a>
       </div>
       </div>
+
+      <!-- Classe para agrupar uma categoria e suas opções -->
       <div class="sociais">
         <h3>Jogos</h3>
         <div class="elementos-footer">
@@ -171,6 +202,8 @@
             <a class="a" href="#">Notícias</a>
         </div>
         </div>
+
+        <!-- Classe para agrupar uma categoria e suas opções -->
         <div class="sociais">
           <h3>Músicas</h3>
           <div class="elementos-footer">
@@ -182,9 +215,28 @@
           </div>
     <h3>Área admnistrativa</h3>
 </div>
+<!-- Classe para acrescentar ao final da footer uma outra footer menor -->
     <div class="sub-footer">
         <p>Copyright 2023</p>
     </div>
     </footer>
+
+    <script>
+        document.getElementById('openOptions').addEventListener('click', function() {
+          var optionsContainer = document.getElementById('optionsContainer');
+          optionsContainer.style.display = (optionsContainer.style.display === 'block') ? 'none' : 'block';
+        });
+      
+        // Feche a aba de opções se o usuário clicar fora dela
+        window.addEventListener('click', function(event) {
+          var optionsContainer = document.getElementById('optionsContainer');
+          var openOptionsButton = document.getElementById('openOptions');
+      
+          if (event.target !== openOptionsButton && event.target !== optionsContainer) {
+            optionsContainer.style.display = 'none';
+          }
+        });
+      </script>
+
   </body>
 </html>
