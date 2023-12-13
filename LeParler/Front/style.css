@@ -159,6 +159,10 @@ body {
     transition: 0.2s;
   }
 
+  .carousel-inner{
+    padding: 1rem;
+  }
+
   /* Estilização da página "Sobre" */
   .title-sobre{
     display: flex;
