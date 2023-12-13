@@ -160,7 +160,15 @@ body {
   }
 
   .carousel-inner{
-    padding: 1rem;
+    padding: 3rem;
+  }
+  .carousel-item{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .carousel-control-prev{
+  
   }
 
   /* Estilização da página "Sobre" */
