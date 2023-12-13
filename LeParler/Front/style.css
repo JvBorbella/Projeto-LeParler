@@ -23,6 +23,7 @@ body {
     padding: 0.5rem;
     cursor: pointer;
     font-weight: bold;
+    text-decoration: none;
 }
 .button-nav:hover {
     background-color: var(--secundaria);
@@ -33,7 +34,7 @@ body {
     font-weight: bold;
 }
 .buttons-nav {
-    width: 15%;
+    width: 25%;
     display: flex;
     justify-content: space-evenly;
 }
@@ -133,18 +134,38 @@ body {
 .options-container {
     display: none;
     position: absolute;
-    background-color: #f9f9f9;
+    background-color: var(--tercearia);
+    
     box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
     z-index: 1;
+    right: 2.8%;
+    top: 11%;
+
   }
 
   .option {
+    width: 500px;
     padding: 12px;
+    border-radius: 10px;
     text-decoration: none;
     display: block;
-    color: #333;
+    color: var(--secundaria);
   }
 
   .option:hover {
-    background-color: #ddd;
+    background-color: var(--secundaria);
+    color: var(--primaria);
+    transition: 0.2s;
+  }
+
+  /* Estilização da página "Sobre" */
+  .title-sobre{
+    display: flex;
+    justify-content: center;
+    padding: 2rem;
+    font-style: italic;
+  }
+  .text-sobre {
+    padding: 2rem;
   }
