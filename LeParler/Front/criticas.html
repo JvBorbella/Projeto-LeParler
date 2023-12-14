@@ -1,116 +1,143 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Críticas de Cinema</title>
+    <div class="back-button-btn">
+      <a class="back-btn" href="./filmes.html">&larr;</a>
+    </div>
     <style>
-        body {
-            font-family: Arial, sans-serif;
-            background-color: #f4f4f4;
-            margin: 0;
-            padding: 0;
-        }
+      body {
+        font-family: Arial, sans-serif;
+        background-color: #f4f4f4;
+        margin: 0;
+        padding: 0;
+      }
 
-        .container {
-            max-width: 800px;
-            margin: 20px auto;
-        }
+      .container {
+        max-width: 800px;
+        margin: 20px auto;
+      }
 
-        .card {
-            background-color: #fff;
-            border-radius: 8px;
-            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-            margin-bottom: 20px;
-            overflow: hidden;
-            cursor: pointer;
-            transition: transform 0.2s;
-        }
+      .card {
+        background-color: #fff;
+        border-radius: 8px;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        margin-bottom: 20px;
+        overflow: hidden;
+        cursor: pointer;
+        transition: transform 0.2s;
+      }
 
-        .card:hover {
-            transform: scale(1.02);
-        }
+      .card:hover {
+        transform: scale(1.02);
+      }
 
-        .card img {
-            width: 100%;
-            height: auto;
-            border-radius: 8px 8px 0 0;
-        }
+      .card img {
+        width: 100%;
+        height: auto;
+        border-radius: 8px 8px 0 0;
+      }
 
-        .card-content {
-            padding: 20px;
-        }
+      .card-content {
+        padding: 20px;
+      }
 
-        .modal {
-            display: none;
-            position: fixed;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            background: rgba(0, 0, 0, 0.8);
-            justify-content: center;
-            align-items: center;
-        }
+      .modal {
+        display: none;
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: rgba(0, 0, 0, 0.8);
+        justify-content: center;
+        align-items: center;
+      }
 
-        .modal-content {
-            background-color: #fff;
-            border-radius: 8px;
-            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-            padding: 20px;
-            max-width: 600px;
-            width: 100%;
-            text-align: left;
-        }
+      .modal-content {
+        background-color: #fff;
+        border-radius: 8px;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        padding: 20px;
+        max-width: 600px;
+        width: 100%;
+        text-align: left;
+      }
 
-        .close-btn {
-            cursor: pointer;
-            position: absolute;
-            top: 10px;
-            right: 10px;
-            font-size: 18px;
-        }
+      .close-btn {
+        cursor: pointer;
+        position: absolute;
+        top: 10px;
+        right: 10px;
+        font-size: 36px;
+        color: #f4f4f4;
+        padding: 2rem;
+      }
+      .back-button-btn{
+        padding: 1rem;
+      }
+      .back-btn {
+        text-decoration: none;
+        cursor: pointer;
+        font-size: 26px;
+        padding: 0 1% 0 1%;
+        color: black;
+        border: 2px solid black;
+        border-radius: 5px;
+      }
+      .back-btn:hover{
+        background-color: black;
+        color: white;
+        text-decoration: none;
+        transition: 0.2s;
+      }
     </style>
-</head>
-<body>
-
-<div class="container">
-    <div class="card" onclick="openModal('Crítica 1', 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed eget ante nec justo viverra condimentum.')">
-        <img src="imagem1.jpg" alt="Imagem da Crítica 1">
+  </head>
+  <body>
+    <div class="container">
+      <div
+        class="card"
+        onclick="openModal('Crítica 1', 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed eget ante nec justo viverra condimentum.')"
+      >
+        <img src="imagem1.jpg" alt="Imagem da Crítica 1" />
         <div class="card-content">
-            <h3>Crítica 1</h3>
-            <p>Breve descrição da crítica 1.</p>
+          <h3>Crítica 1</h3>
+          <p>Breve descrição da crítica 1.</p>
         </div>
+      </div>
+
+      <div
+        class="card"
+        onclick="openModal('Crítica 2', 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed eget ante nec justo viverra condimentum.')"
+      >
+        <img src="imagem2.jpg" alt="Imagem da Crítica 2" />
+        <div class="card-content">
+          <h3>Crítica 2</h3>
+          <p>Breve descrição da crítica 2.</p>
+        </div>
+      </div>
     </div>
 
-    <div class="card" onclick="openModal('Crítica 2', 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed eget ante nec justo viverra condimentum.')">
-        <img src="imagem2.jpg" alt="Imagem da Crítica 2">
-        <div class="card-content">
-            <h3>Crítica 2</h3>
-            <p>Breve descrição da crítica 2.</p>
-        </div>
-    </div>
-</div>
-
-<div id="modal" class="modal">
-    <div class="modal-content">
+    <div id="modal" class="modal">
+      <div class="modal-content">
         <span class="close-btn" onclick="closeModal()">&times;</span>
         <h2 id="modal-title"></h2>
         <p id="modal-content"></p>
+      </div>
     </div>
-</div>
 
-<script>
-    function openModal(title, content) {
-        document.getElementById('modal-title').innerHTML = title;
-        document.getElementById('modal-content').innerHTML = content;
-        document.getElementById('modal').style.display = 'flex';
-    }
+    <script>
+      function openModal(title, content) {
+        document.getElementById("modal-title").innerHTML = title;
+        document.getElementById("modal-content").innerHTML = content;
+        document.getElementById("modal").style.display = "flex";
+      }
 
-    function closeModal() {
-        document.getElementById('modal').style.display = 'none';
-    }
-</script>
-
-</body>
+      function closeModal() {
+        document.getElementById("modal").style.display = "none";
+      }
+    </script>
+  </body>
 </html>
