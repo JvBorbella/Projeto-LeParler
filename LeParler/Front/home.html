@@ -1,150 +1,156 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>LeParler - Inicial</title>
-    <link rel="icon" href="../assets/logo.png">
-    <link rel="stylesheet" href="./style.css" />
-    <link rel="stylesheet" href="./script.js">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
-    <nav class="navbar">
-      <img src="../assets/logo.png" alt="" />
-      <div class="buttons-nav">
-        <a class="button-nav" href="./sobre.html">Quem Somos</a>
-        <button class="button-nav" id="openOptions">Críticas</button>
-        <div class="options-container" id="optionsContainer">
-            <a href="./filmes.html" class="option">Filmes</a>
-            <a href="./series.html" class="option">Series</a>
-            <a href="./jogos.html" class="option">Jogos</a>
-            <a href="./musicas.html" class="option">Musicas</a>
-          </div>
-        </select>
-        </button>
-
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>LeParler - Inicial</title>
+  <link rel="icon" href="../assets/logo.png">
+  <link rel="stylesheet" href="./style.css" />
+  <link rel="stylesheet" href="./script.js">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <nav class="navbar">
+    <img src="../assets/logo.png" alt="" />
+    <div class="buttons-nav">
+      <a class="button-nav" href="./sobre.html">Quem Somos</a>
+      <a class="button-nav" href="./adm.html">Área Administrativa</a>
+      <button class="button-nav" id="openOptions">Críticas</button>
+      <div class="options-container" id="optionsContainer">
+        <a href="./filmes.html" class="option">Filmes</a>
+        <a href="./series.html" class="option">Séries</a>
+        <a href="./jogos.html" class="option">Jogos</a>
+        <a href="./musicas.html" class="option">Músicas</a>
       </div>
-    </nav>
-  </head>
-  <body>   
-    <h2 class="title-home">Destaques</h2>
-<div id="carouselExample" class="carousel slide" data-ride="carousel">
-  <ol class="carousel-indicators">
-    <li data-target="#carouselExample" data-slide-to="0" class="active"></li>
-    <li data-target="#carouselExample" data-slide-to="1"></li>
-    <li data-target="#carouselExample" data-slide-to="2"></li>
-  </ol>
-  <div class="carousel-inner">
-    <div class="carousel-item active">
-      <center>
-      <img src="../assets/godfather.jpg" class="img-slide" alt="Imagem 1">
-    </center>
     </div>
-    <div class="carousel-item">
-      <center>
-      <img src="../assets/logo.png" class="img-slide" alt="Imagem 2">
-    </center>
+  </nav>
+</head>
+<body>   
+  <h2 class="title-home">Destaques</h2>
+  <div id="carouselExample" class="carousel slide" data-ride="carousel">
+    <ol class="carousel-indicators">
+      <li data-target="#carouselExample" data-slide-to="0" class="active"></li>
+      <li data-target="#carouselExample" data-slide-to="1"></li>
+      <li data-target="#carouselExample" data-slide-to="2"></li>
+    </ol>
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <center>
+          <img src="../assets/godfather.jpg" class="img-slide" alt="Imagem 1">
+        </center>
+      </div>
+      <div class="carousel-item">
+        <center>
+          <img src="../assets/logo.png" class="img-slide" alt="Imagem 2">
+        </center>
+      </div>
+      <div class="carousel-item">
+        <center>
+          <img src="../assets/avenger.jpg" class="img-slide" alt="Imagem 3">
+        </center>
+      </div>
     </div>
-    <div class="carousel-item">
-      <center>
-      <img src="../assets/avenger.jpg" class="img-slide" alt="Imagem 3">
-    </center>
-    </div>
+    <a class="carousel-control-prev" href="#carouselExample" role="button" data-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="sr-only">Anterior</span>
+    </a>
+    <a class="carousel-control-next" href="#carouselExample" role="button" data-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="sr-only">Próximo</span>
+    </a>
   </div>
-  <a class="carousel-control-prev" href="#carouselExample" role="button" data-slide="prev">
-    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-    <span class="sr-only">Anterior</span>
-  </a>
-  <a class="carousel-control-next" href="#carouselExample" role="button" data-slide="next">
-    <span class="carousel-control-next-icon" aria-hidden="true"></span>
-    <span class="sr-only">Próximo</span>
-  </a>
-</div>
 
-    <footer>
-        <!-- Classe footer para agrupar e alinhar os elementos dentro dela -->
-        <div class="footer">
-            <!-- Classe para agrupar uma categoria e suas opções -->
-        <div class="sociais">
+  <footer>
+    <!-- Classe footer para agrupar e alinhar os elementos dentro dela -->
+    <div class="footer">
+      <!-- Classe para agrupar uma categoria e suas opções -->
+      <div class="sociais">
         <h4 class="title-footer">Sociais</h4>
         <div class="redes">
-        <a href="https://www.instagram.com/leparler.ag/?igshid=OGQ5ZDc2ODk2ZA%3D%3D"><svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="30" height="30" viewBox="0,0,256,256" style="fill: #000000"><g fill="#ffffff" fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0" font-family="none" font-weight="none" font-size="none" text-anchor="none" style="mix-blend-mode: normal"><g transform="scale(8.53333,8.53333)"><path d="M9.99805,3c-3.859,0 -6.99805,3.14195 -6.99805,7.00195v10c0,3.859 3.14195,6.99805 7.00195,6.99805h10c3.859,0 6.99805,-3.14195 6.99805,-7.00195v-10c0,-3.859 -3.14195,-6.99805 -7.00195,-6.99805zM22,7c0.552,0 1,0.448 1,1c0,0.552 -0.448,1 -1,1c-0.552,0 -1,-0.448 -1,-1c0,-0.552 0.448,-1 1,-1zM15,9c3.309,0 6,2.691 6,6c0,3.309 -2.691,6 -6,6c-3.309,0 -6,-2.691 -6,-6c0,-3.309 2.691,-6 6,-6zM15,11c-2.20914,0 -4,1.79086 -4,4c0,2.20914 1.79086,4 4,4c2.20914,0 4,-1.79086 4,-4c0,-2.20914 -1.79086,-4 -4,-4z"></path></a>
-          </g>
-        </g>
-      </svg>
-      <a href="#"><svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="26" height="26" viewBox="0,0,256,256"
-        style="fill:#000000;">
-        <g fill="#ffffff" fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0" font-family="none" font-weight="none" font-size="none" text-anchor="none" style="mix-blend-mode: normal"><g transform="scale(9.84615,9.84615)"><path d="M13,0c-7.18,0 -13,5.82 -13,13c0,6.518 4.801,11.899 11.057,12.839v-9.394h-3.217v-3.417h3.217v-2.274c0,-3.765 1.834,-5.417 4.963,-5.417c1.498,0 2.291,0.111 2.666,0.162v2.983h-2.134c-1.328,0 -1.792,1.259 -1.792,2.679v1.868h3.893l-0.528,3.417h-3.365v9.422c6.345,-0.862 11.24,-6.287 11.24,-12.868c0,-7.18 -5.82,-13 -13,-13z"></path></g></g>
-        </svg></a>
-    </div>
-    </div>
-
-    <!-- Classe para agrupar uma categoria e suas opções -->
-    <div class="sociais">
-    <h4>Filmes</h4>
-    <div class="elementos-footer">
-        <a class="a" href="./filmes.html#criticas">Críticas</a>
-    </div>
-    <div class="elementos-footer">
-        <a class="a" href="./filmes.html#noticias">Notícias</a>
-    </div>
-    <div class="elementos-footer">
-      <a class="a" href="./filmes.html#oscar">Oscar</a>
-    </div>
-    </div>
-
-    <!-- Classe para agrupar uma categoria e suas opções -->
-    <div class="sociais">
-      <h4>Series</h4>
-      <div class="elementos-footer">
-          <a class="a" href="./series.html#criticas">Críticas</a>
-      </div>
-      <div class="elementos-footer">
-          <a class="a" href="./series.html#noticias">Notícias</a>
-      </div>
-      </div>
-
-       <!-- Classe para agrupar uma categoria e suas opções -->
-       <div class="sociais">
-        <h4>Músicas</h4>
-        <div class="elementos-footer">
-            <a class="a" href="./musicas.html#criticas">Críticas</a>
+          <a href="https://www.instagram.com/leparler.ag/?igshid=OGQ5ZDc2ODk2ZA%3D%3D">
+            <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="30" height="30" viewBox="0,0,256,256" style="fill: #000000">
+              <g fill="#ffffff" fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0" font-family="none" font-weight="none" font-size="none" text-anchor="none" style="mix-blend-mode: normal">
+                <g transform="scale(8.53333,8.53333)">
+                  <path d="M9.99805,3c-3.859,0 -6.99805,3.14195 -6.99805,7.00195v10c0,3.859 3.14195,6.99805 7.00195,6.99805h10c3.859,0 6.99805,-3.14195 6.99805,-7.00195v-10c0,-3.859 -3.14195,-6.99805 -7.00195,-6.99805zM22,7c0.552,0 1,0.448 1,1c0,0.552 -0.448,1 -1,1c-0.552,0 -1,-0.448 -1,-1c0,-0.552 0.448,-1 1,-1zM15,9c3.309,0 6,2.691 6,6c0,3.309 -2.691,6 -6,6c-3.309,0 -6,-2.691 -6,-6c0,-3.309 2.691,-6 6,-6zM15,11c-2.20914,0 -4,1.79086 -4,4c0,2.20914 1.79086,4 4,4c2.20914,0 4,-1.79086 4,-4c0,-2.20914 -1.79086,-4 -4,-4z"></path>
+                </g>
+              </g>
+            </svg>
+          </a>
+          <a href="#">
+            <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="26" height="26" viewBox="0,0,256,256" style="fill:#000000;">
+              <g fill="#ffffff" fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0" font-family="none" font-weight="none" font-size="none" text-anchor="none" style="mix-blend-mode: normal">
+                <g transform="scale(9.84615,9.84615)">
+                  <path d="M13,0c-7.18,0 -13,5.82 -13,13c0,6.518 4.801,11.899 11.057,12.839v-9.394h-3.217v-3.417h3.217v-2.274c0,-3.765 1.834,-5.417 4.963,-5.417c1.498,0 2.291,0.111 2.666,0.162v2.983h-2.134c-1.328,0 -1.792,1.259 -1.792,2.679v1.868h3.893l-0.528,3.417h-3.365v9.422c6.345,-0.862 11.24,-6.287 11.24,-12.868c0,-7.18 -5.82,-13 -13,-13z"></path>
+                </g>
+              </g>
+            </svg>
+          </a>
         </div>
-        <div class="elementos-footer">
-            <a class="a" href="./musicas.html#noticias">Notícias</a>
-        </div>
-        </div>
-
-      <!-- Classe para agrupar Area Administativa e suas opções -->
+      </div>
+      
+      <!-- Classe para agrupar uma categoria e suas opções -->
       <div class="sociais">
-        <h4>Área Administrativa</h4>
+        <h4>Parceiros</h4>
         <div class="elementos-footer">
-            <a class="a" href="./musicas.html#criticas">Logar</a>
+          <a class="a" href="./parc.html">Parceiro 01</a>
         </div>
-        </div>
+        </div>      
 
       <!-- Classe para agrupar uma categoria e suas opções -->
       <div class="sociais">
+        <h4>Filmes</h4>
+        <div class="elementos-footer">
+          <a class="a" href="./filmes.html#criticas">Críticas</a>
+        </div>
+        <div class="elementos-footer">
+          <a class="a" href="./filmes.html#noticias">Notícias</a>
+        </div>
+        <div class="elementos-footer">
+          <a class="a" href="./filmes.html#oscar">Oscar</a>
+        </div>
+      </div>
+
+      <!-- Classe para agrupar uma categoria e suas opções -->
+      <div class="sociais">
+        <h4>Séries</h4>
+        <div class="elementos-footer">
+          <a class="a" href="./series.html#criticas">Críticas</a>
+        </div>
+        <div class="elementos-footer">
+          <a class="a" href="./series.html#noticias">Notícias</a>
+        </div>
+      </div>
+
+      <!-- Classe para agrupar uma categoria e suas opções -->
+      <div class="sociais">
+        <h4>Músicas</h4>
+        <div class="elementos-footer">
+          <a class="a" href="./musicas.html#criticas">Críticas</a>
+        </div>
+        <div class="elementos-footer">
+          <a class="a" href="./musicas.html#noticias">Notícias</a>
+        </div>
+      </div>
+
+      <!-- Classe para agrupar Jogos e suas opções -->
+      <div class="sociais">
         <h4>Jogos</h4>
         <div class="elementos-footer">
-            <a class="a" href="./jogos.html#criticas">Críticas</a>
+          <a class="a" href="./jogos.html#criticas">Críticas</a>
         </div>
         <div class="elementos-footer">
-            <a class="a" href="./jogos.html#noticias">Notícias<a>
+          <a class="a" href="./jogos.html#noticias">Notícias<a>
         </div>
-        </div>
+      </div>
+      </div>
 
-       
-</div>
-<!-- Classe para acrescentar ao final da footer uma outra footer menor -->
+    <!-- Classe para acrescentar ao final da footer uma outra footer menor -->
     <div class="sub-footer">
-        <p>Copyright 2023</p>
+      <p>Copyright João 2023</p>
     </div>
-    </footer>
+  </footer>
 
-    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
-    <script src="./script.js"></script>
-
-  </body>
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  <script src="./script.js"></script>
+</body>
 </html>
