@@ -111,6 +111,7 @@ body {
     text-decoration: none;
     color: var(--secundaria);
     font-size: small;
+    width: 100px;
 }
 .a:hover{
     color: var(--secundaria);
