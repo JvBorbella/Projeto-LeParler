@@ -12,3 +12,11 @@ document.getElementById('openOptions').addEventListener('click', function() {
       optionsContainer.style.display = 'none';
     }
   });
+
+  function openModal() {
+    document.getElementById('myModal').style.display = 'flex';
+}
+
+function closeModal() {
+    document.getElementById('myModal').style.display = 'none';
+}
