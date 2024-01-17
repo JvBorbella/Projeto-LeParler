@@ -1,0 +1,4 @@
+RewriteEngine on
+RewriteRule ^login/?$ api.php
+RewriteRule ^login/([a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,})?$ api.php?email=$1 [L]
+

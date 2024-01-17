@@ -24,6 +24,7 @@ body {
     cursor: pointer;
     font-weight: bold;
     text-decoration: none;
+    margin-right: 2%;
 }
 .button-nav:hover {
     background-color: var(--secundaria);
@@ -35,9 +36,9 @@ body {
     text-decoration: none;
 }
 .buttons-nav {
-    width: 25%;
     display: flex;
     justify-content: space-evenly;
+    width: 30%;
 }
 .menu {
     display: flex;
@@ -97,21 +98,21 @@ body {
 
 }
 .sociais {
-    display: block;
-    width: 25px;
+    display: inline-block;
+    
     justify-content: center;
 }
 .elementos-footer {
     padding: 1%;
-    margin-top: 50%;
-    height: 20px;
+
+   
 }
 .a {
-    padding: 16%;
+    padding: 3%;
     text-decoration: none;
     color: var(--secundaria);
     font-size: small;
-    width: 100px;
+    width: 15px;
 }
 .a:hover{
     color: var(--secundaria);
