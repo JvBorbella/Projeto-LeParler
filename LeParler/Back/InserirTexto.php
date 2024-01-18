@@ -75,43 +75,36 @@
 <body>
 <div class="box">
     <form action="./Insert.php" method="post">
-            <legend><b>escrever resenha</b></legend>
+            <legend><b>Escrever resenha</b></legend>
             <br>
             <div style="display: flex; justify-content: space-between;">
-                <div class="inputBox" style="width: 48%;">
-                    <label>Nome Completo</label><br>
-                    <input class="inputo" type="text" class="form-control" name="nomeTutor" placeholder="" required>
+            <div class="inputBox" style="width: 48%;">
+                    <label>Data</label><br>
+                    <input class="inputo" type="date" class="form-control" name="data" placeholder="" required>
                 </div>
                 <div class="inputBox" style="width: 48%;">
-                    <label>Endereço</label><br>
-                    <input class="inputo" type="text" class="form-control" name="enderecoTutor" placeholder="">
-                </div>
-            </div>
-            <br><br>
-            <div style="display: flex; justify-content: space-between;">
-                <div class="inputBox" style="width: 48%;">
-                    <label>CPF</label><br>
-                    <input class="inputo" type="text" class="form-control" name="cpfTutor" placeholder="" oninput="formatarCPF(this)">
+                    <label>Título</label><br>
+                    <input class="inputo" type="text" class="form-control" name="titulo" placeholder="" required>
                 </div>
                 <div class="inputBox" style="width: 48%;">
-                    <label>Email</label><br>
-                    <input class="inputo" type="email" class="form-control" name="email" placeholder="">
+                    <label>Texto</label><br>
+                    <input class="inputo" type="text" class="form-control" name="texto" placeholder="" required>
                 </div>
-            </div>
-            <br><br>
-            <div style="display: flex; justify-content: space-between;">
-            <div class="inputBox"  style="width: 48%;">
-                <label>Telefone (Opcional)</label><br>
-                <input class="inputo" type="tel" class="form-control" name="telefone2" oninput="formatarTelefone(this)" placeholder="">
-            </div>
                 <div class="inputBox" style="width: 48%;">
-                    <label>Telefone</label><br>
-                    <input class="inputo" type="tel" class="form-control" name="telefone1" oninput="formatarTelefone(this)" placeholder="">
+                    <label>Crítica</label><br>
+                    <input class="inputo" type="number" class="form-control" name="critica" placeholder="" required>
                 </div>
-            </div>
-            <div class="inputBox">
-                    <label>Senha</label><br>
-                    <input class="inputo" type="password" class="form-control" name="senha" placeholder="">
+                <div class="inputBox" style="width: 48%;">
+                    <label>Imagem</label><br>
+                    <input class="inputo" type="text" class="form-control" name="imagem" placeholder="" required>
+                </div>
+                <div class="inputBox" style="width: 48%;">
+                    <label>Categoria</label><br>
+                    <input class="inputo" type="text" class="form-control" name="categoria" placeholder="" required>
+                </div>
+                <div class="inputBox" style="width: 48%;">
+                    <label>Escritor</label><br>
+                    <input class="inputo" type="text" class="form-control" name="pessoa" placeholder="" required>
                 </div>
            
             <br><br>
